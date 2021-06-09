@@ -1,0 +1,79 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Post Name</title>
+
+    <link rel='stylesheet' href="{% static 'css/default.css' %}">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1" />
+
+	<link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
+
+	<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&display=swap" rel="stylesheet">
+
+
+	<style type="text/css">
+		.img-container{
+			max-width: 600px;
+		}
+
+		img{
+			width: 100%
+		}
+
+	</style>
+
+</head>
+<body>
+	<div class="nav-wrapper">
+
+		<!-- Link around dots-wrapper added after tutorial video -->
+		<a href="index.html">
+				<a href="/">Go Back</a>
+		</a>
+		<ul id="navigation">
+			<li><a href="/">Contact</a></li>
+		</ul>
+	</div>
+
+	<div class="main-container">
+		<br>
+
+		<div class="img-container">
+			<img src="{% static "DetectionOfAdulterants.jpg" %}" alt="My image">
+		</div>
+
+		<h3>Detection of Adulterants in Milk</h3>
+
+		<p>This project consists of ammonia gas sensor that is mounted on the top of the beaker which contains milk.The gas sensor is interfaced with the aurdino.The LCD is connected to the digital pin.
+		<br>
+		<br>
+		The sensor detects and gives the information to aurdino and displays the values in LCD.To heat and stir the milk the beaker is placed on the magnetic stirrer.And the computer is connected to the aurdino to upload the program.
+		<br>
+		<br>
+
+		<br>The primary sensing will be done by using the ammonia gas sensor(Q135).The ammonia gas sensor detects the ammonia gas that was escaping from the gas while heating about 70 degree celcius.The sensor will read the value and and it give to the aurdino.
+		<br>
+		The analog signal that was getting from the sesor will be converted to the digital valuesby using the aurdino board.The voltage value of the aurdino can be converted to any units by means of programming.The values can be converted to ppm by programming the aurdino.
+		<br>
+		<br>
+		The converted signal will be displayed as a required value by using the LCD</p>
+
+		<h5>Technologies&Components:</h5>
+		<ul>
+			<li>- Python</li>
+			<li>- IOT</li>
+			<li>- Aurdino</li>
+			<li>- Ammonia Gas Sensor-(MQ135)</li>
+			<li>- PhMeter & LCD display</li>
+
+		</ul>
+
+
+		<h5>Project Report</h5>
+		<p><a target="_blank" href="B13 Final project Report 2 (1).docx">Click to Download Project Report here</a></p>
+
+	</div>
+
+</body>
+</html>

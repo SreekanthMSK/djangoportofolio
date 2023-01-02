@@ -34,7 +34,7 @@ EMAIL_PORT = 587
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 
 
-ALLOWED_HOSTS = ['0.0.0.0']
+ALLOWED_HOSTS = ['54.167.120.67']
 
 
 # Application definition

@@ -23,7 +23,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-07p1a6b0d+v#u&x7%td28p33oln2bx^v#eh+xhkmn#$kkzie66'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 EMAIL_USE_TLS = True
 EMAIL_HOST = 'smtp.gmail.com'
@@ -33,7 +33,7 @@ EMAIL_PORT = 587
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 
 
-ALLOWED_HOSTS = ['54.167.120.67']
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -134,9 +134,13 @@ STATIC_URL = '/static/'
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-if DEBUG:
-        STATICFILES_DIRS = [
-            os.path.join(BASE_DIR, 'static')
-       ]
-else:
-    STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+STATICFILES_DIRS = [
+    os.path.join(BASE_DIR, 'static'),
+]
+
+# if DEBUG:
+#         STATICFILES_DIRS = [
+#             os.path.join(BASE_DIR, 'static')
+#        ]
+# else:
+#     STATIC_ROOT = os.path.join(BASE_DIR, 'static')
